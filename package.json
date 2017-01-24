@@ -1,0 +1,42 @@
+{
+  "name": "react-markdown-sandbox",
+  "version": "1.0.0",
+  "description": "\"# react-markdown-sandbox\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wreulicke/react-markdown-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wreulicke/react-markdown-sandbox/issues"
+  },
+  "homepage": "https://github.com/Wreulicke/react-markdown-sandbox#readme",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.14.0",
+    "eslint-plugin-react": "^6.9.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "rehype-highlight": "^1.1.0",
+    "rehype-react": "^2.0.0",
+    "remark-github": "^6.0.1",
+    "remark-parse": "^2.2.0",
+    "remark-rehype": "^1.3.0",
+    "remark-toc": "^3.1.0",
+    "unified": "^5.1.0",
+    "webpack": "beta",
+    "webpack-dev-server": "beta"
+  }
+}
