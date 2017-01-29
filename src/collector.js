@@ -1,6 +1,6 @@
 class Collector {
   constructor(collector) {
-    if (this.collector != null)
+    if (collector != null)
       this.collector = collector
   }
   collect(node) {
@@ -10,7 +10,7 @@ class Collector {
     return node
   }
 }
-module.exports = function(processor, option) {
+module.exports = exports = function(processor, option) {
   const collector = option.collector || new Collector(::console.log)
   return ::collector.collect
 }
