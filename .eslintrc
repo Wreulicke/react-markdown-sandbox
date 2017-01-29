@@ -31,6 +31,10 @@
         "allowTemplateLiterals": true
       }
     ],
+    "semi": [
+      "error",
+      "never"
+    ],
     "no-var": "error",
     "prefer-const": "error",
     "prefer-spread": "error",

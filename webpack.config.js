@@ -1,5 +1,5 @@
-'use strict'
-const path=require("path")
+"use strict"
+const path = require("path")
 module.exports = {
   devServer: {
     contentBase: "./",
@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use:[
+        use: [
           {
             loader: "babel-loader"
           }

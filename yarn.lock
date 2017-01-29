@@ -740,6 +740,14 @@ babel-plugin-transform-strict-mode@^6.22.0:
     babel-runtime "^6.22.0"
     babel-types "^6.22.0"
 
+babel-polyfill@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.22.0.tgz#1ac99ebdcc6ba4db1e2618c387b2084a82154a3b"
+  dependencies:
+    babel-runtime "^6.22.0"
+    core-js "^2.4.0"
+    regenerator-runtime "^0.10.0"
+
 babel-preset-es2015@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-preset-es2015/-/babel-preset-es2015-6.22.0.tgz#af5a98ecb35eb8af764ad8a5a05eb36dc4386835"
@@ -1619,6 +1627,10 @@ event-emitter@~0.3.4:
   dependencies:
     d "~0.1.1"
     es5-ext "~0.10.7"
+
+eventemitter2@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/eventemitter2/-/eventemitter2-3.0.0.tgz#fec69ba0b1cde27a1bb0bd52df549fd6f65b0f45"
 
 eventemitter3@1.x.x:
   version "1.2.0"
