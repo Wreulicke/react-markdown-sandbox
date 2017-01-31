@@ -2,7 +2,6 @@ import "babel-polyfill"
 const React = require("react")
 const ReactDOM = require("react-dom")
 const processor = require("./processor")
-
 class App extends React.Component {
   componentWillMount() {
     this.state = {

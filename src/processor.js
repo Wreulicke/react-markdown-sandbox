@@ -10,9 +10,12 @@ const collector = require("./collector")
 const Collector = collector.Collector
 const React = require("react")
 const Immutable = require("immutable")
+const ComponentWrapper = require("./ComponentWrapper")
+const wrapper = Object.keys(React.DOM).reduce((r, key) => (r[key] = ComponentWrapper(key, React.DOM[key]), r), {})
 let map = Immutable.List.of()
 let head = -1
 const descriptor = (parent) => {
+  // TODO implementation
   parent.children.forEach((node) => {
     if (node.type == "heading") {
       head++
@@ -36,5 +39,6 @@ module.exports = unified()
   .use(remark2rehype)
   .use(highlight)
   .use(rehype2react, {
-    createElement: React.createElement
+    createElement: React.createElement,
+    components: wrapper
   })
