@@ -1,7 +1,8 @@
-
-const generator = (function*() {
+const g = function*() {
   let current = 0
-  for (;;) yield ++current
-}())
+  for (;;)
+    yield ++current
+}
+const generator = g()
 
 module.exports = generator
