@@ -30,22 +30,22 @@ class App extends React.Component {
       .join("\n")
     this.state = {
       text,
-      showingDrawer: mql.matches
+      showingDrawer: mql.matches,
     }
   }
   mediaQueryChanged() {
     this.setState({
-      showingDrawer: mql.matches
+      showingDrawer: mql.matches,
     })
   }
   onChange(ev) {
     this.setState({
-      text: ev.target.value
+      text: ev.target.value,
     })
   }
   render() {
     const style = {
-      transform: this.state.showingDrawer ? "translateX(256px)" : ""
+      transform: this.state.showingDrawer ? "translateX(256px)" : "",
     }
     return (
       <MuiThemeProvider>

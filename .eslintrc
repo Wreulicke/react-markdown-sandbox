@@ -1,5 +1,10 @@
 {
-  "extends": "eslint:recommended",
+  "extends": [
+    "prettier",
+    "prettier/react",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "parser": "babel-eslint",
   "env": {
     "browser": true,
@@ -22,8 +27,19 @@
     "classes": true
   },
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "trailingComma":"es5"
+      }
+    ],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "indent": [
+      "error",
+      2
+    ],
     "quotes": [
       "error",
       "double",
@@ -46,6 +62,7 @@
     "no-extra-bind": "error",
     "no-multi-spaces": "error",
     "no-useless-return": "error",
+    "no-param-reassign": "error",
     "wrap-iife": "error",
     "no-lonely-if": "error"
   }

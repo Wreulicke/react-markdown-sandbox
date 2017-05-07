@@ -1,4 +1,3 @@
-
 const React = require("react")
 const generator = require("./IdGenerator")
 module.exports = (tagName, tag) => {
@@ -13,11 +12,11 @@ module.exports = (tagName, tag) => {
     }
     componentWillUpdate() {}
     render() {
-      const {id} = this.state
+      const { id } = this.state
       const props = {
         key: `content-${id}`,
         className: className,
-        ...this.props
+        ...this.props,
       }
       return <span className={this.state.id}>{tag(props)}</span>
     }
