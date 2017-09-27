@@ -1,5 +1,6 @@
 "use strict"
 const path = require("path")
+const webpack = require("webpack")
 module.exports = {
   devServer: {
     contentBase: "./",
@@ -18,11 +19,17 @@ module.exports = {
         test: /\.js$/,
         use: [
           {
-            loader: "babel-loader"
-          }
+            loader: "babel-loader",
+          },
         ],
       },
     ],
   },
+  plugins: [
+    // new webpack.LoaderOptionsPlugin({
+    //   minimize: true,
+    //   debug: false,
+    // }),
+    // new webpack.optimize.UglifyJsPlugin(),
+  ],
 }
-

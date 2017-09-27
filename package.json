@@ -7,6 +7,7 @@
     "start": "webpack-dev-server --open",
     "lint": "eslint \"src/**/*.js\" --fix",
     "test": "ava",
+    "analyze": "webpack --json | webpack-bundle-size-analyzer",
     "watch:test": "nyc ava"
   },
   "repository": {
@@ -62,5 +63,9 @@
         "transform-es2015-modules-commonjs"
       ]
     }
+  },
+  "devDependencies": {
+    "source-map-explorer": "^1.3.3",
+    "webpack-bundle-size-analyzer": "^2.6.0"
   }
 }

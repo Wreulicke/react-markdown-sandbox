@@ -3,6 +3,5 @@
   "javascript.format.enable": false,
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
-  "editor.formatOnSave": true,
   "html.format.enable": true
 }
